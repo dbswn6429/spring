@@ -1,4 +1,0 @@
-#Tomcat publish data
-#Wed Mar 26 16:14:35 KST 2025
-org.eclipse.jst.jee.server\:/binary\:/Users/kimyoonjoo/.m2/repository/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar=/Users/kimyoonjoo/Desktop/spring/apache-tomcat-9.0.102/wtpwebapps/SpringBasic/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar
-org.eclipse.jst.jee.server\:SpringBasic=/Users/kimyoonjoo/Desktop/spring/apache-tomcat-9.0.102/wtpwebapps/SpringBasic

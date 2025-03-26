@@ -1,9 +1,0 @@
-package com.simple.ex01;
-
-public class MainClass {
- 
-	public static void main(String[] args) {
-		SpringTest st = new SpringTest();
-		st.Hello();
-	}
-}

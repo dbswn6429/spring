@@ -1,8 +1,0 @@
-package com.simple.controller;
-
-import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
-
-//다양한 컨트롤러를 상속 
-public class MainController extends MultiActionController {
-
-}
