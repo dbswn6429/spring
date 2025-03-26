@@ -1,0 +1,28 @@
+package com.simple.ex04;
+
+public class Printer {
+	
+    /*
+     * Printer객체가 생성될때 @Autowired에 	
+     */
+
+	private Document document;
+
+	public Printer(Document document) {
+		this.document = document;
+	}
+
+	
+	//getter/setter
+	public Document getDocument() {
+		return document;
+	}
+
+	public void setDocument(Document document) {
+		this.document = document;
+	}
+	
+	
+	
+	
+}

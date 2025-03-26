@@ -1,0 +1,30 @@
+package com.simple.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/request") //모든 메서드 요청 경로 앞에 /request가 붙음 
+public class RequestController {
+
+	//ex01화면 요청
+//	@RequestMapping("/ex01")
+//	public String ex01() {
+//		
+//		return "request/ex01";
+//	}
+
+	//void형으로 화면 연결 - 요청경로가 나가는 경로가 됩니다 
+	@RequestMapping("/ex01")
+	public void ex01() {
+		
+	}
+	
+	//basic01
+	@RequestMapping("/basic01")
+	public void basic01() {
+		System.out.println("basic01요");
+	}
+	
+	
+}
