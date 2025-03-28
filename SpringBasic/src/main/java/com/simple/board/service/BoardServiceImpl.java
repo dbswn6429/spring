@@ -8,33 +8,38 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.simple.board.dao.BoardDAO;
+import com.simple.board.dao.BoardMapper;
 import com.simple.command.BoardVO;
+import com.simple.command.ScoreVO;
 
 
 @Service("board")
 public class BoardServiceImpl implements BoardService {
 
+//	@Autowired
+//	@Qualifier("boardDAO")
+//	private BoardDAO boardDAO;
+	
 	@Autowired
-	@Qualifier("boardDAO")
-	private BoardDAO boardDAO;
+	private BoardMapper boardMapper;
 	
 	
 	@Override
 	public void regist(BoardVO vo) {
+		boardMapper.insertBoard(vo);
 		
-		boardDAO.regist(vo);
 		
 	}
 
 	@Override
 	public ArrayList<BoardVO> getList() {
-		return boardDAO.getList();
+		return boardMapper.selectBoard();
 	}
 
 	@Override
 	public void delete(String sno) {
-		boardDAO.delete(sno);
 		
+		boardMapper.deleteBoard(sno);
 	}
 
 }

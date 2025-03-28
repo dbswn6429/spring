@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ <mapper namespace="com.simple.board.dao.BoardMapper">
+ 	<insert id="insertBoard" parameterType="com.simple.command.BoardVO">
+ 		INSERT INTO BOARD VALUES(BOARD_SEQ.NEXTVAL, #{name}, #{title}, #{content})
+ 	</insert>
+ 	<select id="selectBoard" resultType="com.simple.command.BoardVO">
+ 		SELECT * FROM BOARD 
+ 	</select>
+ 	<delete id="deleteBoard" parameterType="string">
+ 		DELETE FROM BOARD WHERE SNO = #{sno}
+ 	</delete>
+ 	
+ </mapper>
